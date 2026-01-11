@@ -1,12 +1,12 @@
 @Library('ansible-shared-library') _
 
 def config = [
-    SLACK_CHANNEL_NAME  : 'build-status',
+    SLACK_CHANNEL_NAME  : '#jenkins-assignment',
     ENVIRONMENT         : 'prod',
-    CODE_BASE_PATH      : 'env/prod',
+    CODE_BASE_PATH      : '.',
     ACTION_MESSAGE      : 'Production deployment completed successfully',
     KEEP_APPROVAL_STAGE : true,
-    GIT_REPO            : 'https://github.com/org/ansible-repo.git',
+    GIT_REPO            : 'https://github.com/askankita19-jpg/Opstree-Batch-33.git',
     PLAYBOOK_NAME       : 'deploy.yml'
 ]
 
